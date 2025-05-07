@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "font";
+}
+
+@font-face {
+  font-family: "font";
+  src: url(../../../../public/font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0%;
+  transition: 0.5s;
+}
+
+.info-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 4vw;
+}
+
+.left-info {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.left-info > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+}
+
+.left-info > div > svg {
+  color: #cda45e;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  padding: 3vh 4vw;
+  background-color: rgba(12, 11, 9, 0.862745098);
+  justify-content: space-between;
+}
+
+.head > a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+nav > a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+nav > a:focus {
+  color: #cda45e;
+}
+
+.head > button {
+  padding: 1vh 2vw;
+  background-color: transparent;
+  border: 2px solid #cda45e;
+  color: rgba(255, 255, 255, 0.7019607843);
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.head > button:hover {
+  background-color: #cda45e;
+}
