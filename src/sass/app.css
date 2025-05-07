@@ -90,44 +90,4 @@ nav > a:focus {
 #menu {
   color: white;
   cursor: pointer;
-  display: none;
-}
-
-#close {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  .right-info {
-    display: none;
-  }
-  .info-contact {
-    justify-content: center;
-  }
-  #menu {
-    display: block;
-  }
-  nav {
-    position: fixed;
-    flex-direction: column;
-    background-color: #29261f;
-    width: 80vw;
-    height: 100vh;
-    top: 7%;
-    gap: 3vw;
-    transition: 0.5;
-    color: #0c0b09 !important;
-    align-items: start;
-    padding: 5vw;
-    border-radius: 5px;
-    display: none;
-  }
-  #close {
-    display: block;
-    position: fixed;
-    top: 4%;
-    right: 5%;
-    color: white;
-    cursor: pointer;
-  }
-}
+}/*# sourceMappingURL=app.css.map */
