@@ -5,6 +5,7 @@ const close = document.getElementById('close')
 burger.addEventListener('click' , ()=>{
     navigation.style.display = "flex"
     document.body.style.background = "#0c0b09dc"
+    document.body.style.overflow = "hidden"
 })
 
 close.addEventListener('click' , () => {

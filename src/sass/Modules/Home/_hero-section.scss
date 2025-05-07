@@ -1,0 +1,117 @@
+body{
+    background-color: $bg-color;
+}
+
+
+.hero-section > img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin-top: -40vh;
+}
+
+
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #0c0b0975;
+    // gap: 30vw;
+
+}
+
+.left-hero{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 50%;
+    padding: 0vw 0vw 10vw 10vw;
+}
+.left-hero > h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.left-hero > h1 > span{
+    color: $accent;
+}
+.left-hero > h4{
+    font-size: 20px;
+    color: #ffffffbb;
+    font-weight: 500;
+}
+
+.left-hero > div{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding-left: 3vw;
+}
+.left-hero > div > button{
+    background-color: transparent;
+    border: 2px $accent solid;
+    border-radius: 50px;
+    color: #fff;
+    padding: 1vh 2vw;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.left-hero > div > button:hover{
+    background-color: $accent;
+}
+
+.right-hero{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10vw;
+}
+
+.right-hero >svg{
+    background-color: $accent;
+    width: 2vw;
+    height: 2vw;
+    padding: 1vw;
+    border-radius: 50%;
+    border: 10px solid #f7f1e757;
+    cursor: pointer;
+}
+
+
+@media (max-width : 480px) {
+    .hero-section {
+        flex-direction: column;
+    }
+    .left-hero{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 5vw;
+        margin-top: -100vw;
+        text-align: center;
+    }
+    .left-hero > div{
+        gap: 2vw !important;
+        padding: 4vh 1vw;
+    }
+    .left-hero > div > button{
+        padding: 1vh 3vw;
+    }
+    .right-hero{
+        width: 100%;
+        margin: 0;
+    }
+    .right-hero >svg{
+        width: 4vw;
+        height: 4vw;
+        padding: 2vw;
+    }
+}

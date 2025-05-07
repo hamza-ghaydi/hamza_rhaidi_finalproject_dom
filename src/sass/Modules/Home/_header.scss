@@ -33,7 +33,8 @@
     align-items: center;
     gap: 5px;
     font-size: 15px;
-    // color: $default;
+    color: $default;
+    font-weight: 700;
 }
 .left-info > div >svg{
     color: $accent;
@@ -45,6 +46,7 @@
     padding: 3vh 4vw;
     background-color: $bg-color;
     justify-content: space-between;
+    z-index: 999;
 }
 .head > a{
     text-decoration: none;
@@ -119,6 +121,7 @@ nav > a:focus{
         padding: 5vw;
         border-radius: 5px;
         display: none;
+        z-index: 999;
     }
 
     #close{
