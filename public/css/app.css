@@ -732,3 +732,29 @@ body {
     width: 100%;
   }
 }
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 4vh 4vw;
+}
+
+.gallery-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-img > img {
+  width: 25%;
+  transition: ease-in-out 1ms;
+}
+
+.gallery-img > img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .gallery-img > img {
+    width: 100%;
+  }
+}
