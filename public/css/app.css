@@ -477,7 +477,7 @@ body {
 }
 
 .info-plat::after {
-  content: ".....................................................................................................................................................................................";
+  content: "................................................................................................................................";
   position: absolute;
   left: 20px;
   right: 0;
@@ -509,5 +509,107 @@ body {
   }
   .info-plat::after {
     content: "......................................................................";
+  }
+}
+.specials {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 4vh 4vw;
+  background-color: rgba(12, 11, 9, 0.862745098);
+}
+
+.info-special {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.left-specials {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  border-right: 1px solid #cda45e;
+  height: min-content;
+}
+
+.left-specials > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1vh;
+  font-weight: 600;
+}
+
+.left-specials > a:focus, .left-specials > :active {
+  color: black;
+  background-color: #cda45e;
+  border-right: 1px solid #fff;
+}
+
+.right-specials {
+  width: 70%;
+}
+
+.tab {
+  display: none;
+  gap: 1vw;
+}
+
+#tab1 {
+  display: flex;
+}
+
+.tab > img {
+  width: 50%;
+}
+
+.details {
+  color: #fff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details > h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.italic {
+  font-family: sans-serif;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+.details > p:last-child {
+  color: rgba(255, 255, 255, 0.7019607843);
+  font-family: sans-serif;
+}
+
+.tab {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .info-special {
+    flex-direction: column;
+  }
+  .left-specials {
+    width: 100%;
+    border: none;
+  }
+  .right-specials {
+    width: 100%;
+  }
+  .tab {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .tab > img {
+    width: 100%;
+  }
+  .details {
+    width: 100%;
   }
 }

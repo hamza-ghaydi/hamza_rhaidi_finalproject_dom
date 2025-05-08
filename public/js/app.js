@@ -70,5 +70,25 @@ specialtyBtn.addEventListener('click', () => {
 })
 
 
+// tabs
+document.querySelectorAll('.left-specials a').forEach(tab => {
+  tab.addEventListener('click', function(e) {
+      
+      document.querySelectorAll('.tab').forEach(content => {
+          content.style.display = 'none';
+      });
+      
+      
+      document.getElementById(this.getAttribute('data-tab')).style.display = 'flex';
+      
+      
+      document.querySelectorAll('.left-specials a').forEach(t => {
+          t.classList.remove('active');
+      });
+      this.classList.add('active');
+  });
+});
+
+
 
   
