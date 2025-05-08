@@ -1,0 +1,55 @@
+.reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 4vh 4vw;
+    
+}
+
+
+.reservation > form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+    padding: 2vw;
+}
+
+.reservation > form > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1vw;
+}
+
+.reservation > form > div > input{
+    width: 28%;
+    background-color: transparent;
+    padding: 1vh 1vw;
+    border: 1px solid $default;
+    color: #fff;
+    font-size: 18px;
+}
+
+.reservation > form >textarea{
+    width: 100%;
+    background-color: transparent;
+    padding: 1vh 1vw;
+}
+
+.reservation > form > button{
+    background-color: transparent;
+    margin: auto;
+    padding: 1vh 2vw;
+    color: #fff;
+    border: 2px solid $accent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+@media (max-width : 480px) {
+    .reservation > form > div > input{
+    width: 100%;
+    }
+}

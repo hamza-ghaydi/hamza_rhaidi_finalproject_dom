@@ -90,5 +90,4 @@ document.querySelectorAll('.left-specials a').forEach(tab => {
 });
 
 
-
-  
+// carousel event
