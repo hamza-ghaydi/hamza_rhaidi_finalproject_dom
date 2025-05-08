@@ -398,3 +398,116 @@ body {
     flex-direction: column;
   }
 }
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  padding: 4vh 4vw;
+}
+
+.tabs-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.tabs-menu > button {
+  color: #fff;
+  background: none;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs-menu > button:focus {
+  color: #cda45e;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1vw;
+  justify-content: center;
+  min-height: 30vh;
+}
+
+.plats {
+  display: flex;
+  width: calc(50% - 1vw);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.plats > img {
+  width: 4vw;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.2823529412);
+}
+
+.plats > div {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.info-plat {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.info-plat > h4 {
+  color: #fff;
+  background-color: rgba(12, 11, 9, 0.862745098);
+  padding-right: 10px;
+  z-index: 3;
+}
+
+.info-plat > span {
+  color: #cda45e;
+  padding: 0 10px;
+  font-weight: 600;
+  background-color: rgba(12, 11, 9, 0.862745098);
+  z-index: 3;
+}
+
+.info-plat::after {
+  content: ".....................................................................................................................................................................................";
+  position: absolute;
+  left: 20px;
+  right: 0;
+  top: -4px;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+.plats > div > p {
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7019607843);
+}
+
+@media (max-width: 480px) {
+  .tabs-menu {
+    padding-top: 3vh;
+  }
+  .plats {
+    width: 100%;
+    gap: 2vw;
+  }
+  .menu-list {
+    gap: 5vw;
+    padding: 4vh 0;
+  }
+  .plats > img {
+    width: 8vw;
+  }
+  .info-plat::after {
+    content: "......................................................................";
+  }
+}
