@@ -849,12 +849,14 @@ iframe {
 .contact-info {
   display: flex;
   gap: 3vw;
+  padding-inline: 3vw;
 }
 
 .contact-info > div {
   display: flex;
   flex-direction: column;
   gap: 3vw;
+  width: 30%;
 }
 
 .info-item {
@@ -936,6 +938,111 @@ iframe {
     flex-direction: column;
   }
   .contact-info > form {
+    width: 100%;
+  }
+  .contact-info > div {
+    width: 100%;
+  }
+}
+footer {
+  background-color: black;
+  padding: 2vh 3vw;
+}
+
+.top-footer {
+  display: flex;
+  align-items: start;
+  gap: 2vw;
+  border-bottom: 0.5px rgba(255, 255, 255, 0.7019607843) solid;
+  padding-bottom: 1vw;
+}
+
+.top-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  color: rgba(255, 255, 255, 0.7019607843);
+  width: 33%;
+}
+
+.top-footer > div > a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.socials-icons {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  padding: 2vh;
+}
+
+.socials-icons > svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: white 1px solid;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.links {
+  width: 16%;
+}
+
+.links > h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.links > a {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.7019607843) !important;
+}
+
+.links > div {
+  display: flex;
+  align-items: center;
+}
+
+.links > div > input {
+  background-color: transparent;
+  padding: 1vh 2vw;
+  border: 2px #cda45e solid;
+  border-radius: 50px 0 0 50px;
+}
+
+.links > div > button {
+  padding: 1vh 1vw;
+  background-color: #cda45e;
+  border: 2px solid #cda45e;
+  border-radius: 0 50px 50px 0;
+  color: white;
+  font-weight: 600;
+}
+
+.bottom-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7019607843);
+  text-align: center;
+  padding: 2vh;
+}
+
+@media (max-width: 480px) {
+  .top-footer {
+    flex-direction: column;
+    gap: 2vw;
+  }
+  .links {
+    width: 100%;
+  }
+  .top-footer > div {
     width: 100%;
   }
 }

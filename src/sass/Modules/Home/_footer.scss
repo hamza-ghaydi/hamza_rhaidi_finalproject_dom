@@ -1,0 +1,108 @@
+footer{
+    background-color: black;
+    padding: 2vh 3vw;
+}
+
+.top-footer {
+    display: flex;
+    align-items: start;
+    gap: 2vw;
+    border-bottom: 0.5px $default solid;
+    padding-bottom: 1vw;
+}
+
+
+.top-footer > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    color: $default;
+    width: 33%;
+}
+
+
+.top-footer >div> a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.socials-icons{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vh;
+}
+.socials-icons > svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #ffff 1px solid;
+    padding: 8px;
+    border-radius: 50%
+}
+
+.links{
+    width: 16%;
+}
+
+.links > h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.links > a{
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    color: $default !important;
+}
+
+.links > div {
+    display: flex;
+    align-items: center;
+}
+
+.links > div > input {
+    background-color: transparent;
+    padding: 1vh 2vw;
+    border: 2px $accent solid;
+    border-radius: 50px 0 0 50px;
+}
+
+.links > div > button {
+    padding: 1vh 1vw;
+    background-color: $accent;
+    border: 2px solid $accent;
+    border-radius: 0 50px 50px 0;
+    color: #ffff;
+    font-weight: 600;
+
+}
+
+.bottom-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $default;
+    text-align: center;
+    padding: 2vh;
+}
+
+
+@media (max-width : 480px) {
+    .top-footer {
+    flex-direction: column;
+    gap: 2vw;
+}
+.links{
+    width: 100%;
+}
+.top-footer > div{
+
+    width: 100%;
+}
+}
+
+

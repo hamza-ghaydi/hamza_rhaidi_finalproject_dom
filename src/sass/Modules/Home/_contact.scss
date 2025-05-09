@@ -12,12 +12,14 @@ iframe {
 .contact-info {
     display: flex;
     gap: 3vw;
+    padding-inline: 3vw;
 }
 
 .contact-info>div {
     display: flex;
     flex-direction: column;
     gap: 3vw;
+    width: 30%;
 }
 
 .info-item {
@@ -102,4 +104,8 @@ iframe {
     .contact-info>form {
     width: 100%;
     }
+
+    .contact-info>div {
+    width: 100%;
+}
 }
