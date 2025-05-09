@@ -70,7 +70,7 @@
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
             </svg>
 
-            <button class="book">BOOK A TABLE</button>
+            <button id="btnId" class="book">BOOK A TABLE</button>
 
         </div>
     </header>
@@ -92,7 +92,7 @@
         </div>
 
         <div class="right-hero">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill"
+            <svg class="play-carousel" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill"
                 viewBox="0 0 16 16">
                 <path
                     d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
@@ -850,6 +850,76 @@
         </div>
 
     </footer>
+
+    <!-- modal -->
+    <div id="myModal1" class="modal">
+        <span class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x"
+                viewBox="0 0 16 16">
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </span>
+        
+        <form action="">
+            <h2>Book A Table</h2>
+            <div>
+                <input placeholder="Your Name" type="text">
+                <input placeholder="Your Email" type="email">
+            </div>
+
+            <input placeholder="Subject" type="text">
+
+            <textarea rows="5" placeholder="Message" name="" id=""></textarea>
+
+            <button>Send Message</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- carousel hero section -->
+
+    <div class="slide-container">
+
+        <svg class="carousel-close" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+          </svg>
+
+        <div class="slides slide1">
+            <iframe auplay width="960" height="541" src="https://www.youtube.com/embed/Y7f98aduVJ8" title="BootstrapMade Template Builder Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="slides slide2">
+            <img src="./public/images/gallery-2.jpg" alt="">
+        </div>
+
+        <div class="slides slide3">
+            <img src="./public/images/gallery-3.jpg" alt="">
+        </div>
+
+        <div class="slides slide4">
+            <img src="./public/images/gallery-4.jpg" alt="">
+        </div>
+
+        <div class="slides slide5">
+            <img src="./public/images/gallery-5.jpg" alt="">
+        </div>
+
+        <div class="slides slide6">
+            <img src="./public/images/gallery-6.jpg" alt="">
+        </div>
+
+        <div class="arrow">
+            <a href="" class="prev">❮</a>
+            <a href="" class="next">❯</a>
+        </div>
+
+    </div>
+
+    
+
 
     <script src="./public/js/app.js"></script>
 </body>

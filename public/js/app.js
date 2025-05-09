@@ -90,4 +90,84 @@ document.querySelectorAll('.left-specials a').forEach(tab => {
 });
 
 
-// carousel event
+// modal
+
+document.addEventListener('DOMContentLoaded', function() {
+  let modal = document.getElementById('myModal1');
+  let btn = document.getElementById('btnId');
+  let close = modal.querySelector('.close');
+  
+  btn.addEventListener('click', () => {
+      modal.style.display = 'block';
+      document.body.classList.add('modal-open');
+      document.body.style.overflow = 'hidden';
+  });
+  
+  close.addEventListener('click', () => {
+      modal.style.display = 'none';
+      document.body.classList.remove('modal-open');
+      document.body.style.overflow = '';
+  });
+  
+});
+
+// carousel hero section
+
+let close_carousel = document.querySelector(".carousel-close")
+let play_carousel = document.querySelector(".play-carousel")
+let slide_container = document.querySelector(".slide-container")
+console.log(slide_container);
+
+
+play_carousel.addEventListener('click' , () =>{
+  slide_container.style.display = "block"
+  document.body.classList.add('modal-open');
+  document.body.style.overflow = 'hidden';
+})
+
+close_carousel.addEventListener('click' , () =>{
+  slide_container.style.display = "none"
+  document.body.classList.remove('modal-open');
+  document.body.style.overflow = '';
+})
+
+let slideIndex = 1
+slideshow(slideIndex)
+
+function plusSlide(n) {
+    slideshow(slideIndex += n)
+}
+
+
+function slideshow(n) {
+    let slides = document.getElementsByClassName("slides")
+    if (n > slides.length) {
+        slideIndex = 1
+    } 
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"
+    }
+    slides[slideIndex -1].style.display = "block"
+}
+
+
+let prev = document.querySelector(".prev")
+prev.addEventListener("click", (e) => {
+    e.preventDefault()
+    plusSlide(-1)
+})
+
+let next = document.querySelector(".next")
+next.addEventListener("click", (e) => {
+    e.preventDefault()
+    plusSlide(1)
+})
+
+
+
+
+
+
