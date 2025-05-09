@@ -9,7 +9,6 @@ body{
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    margin-top: -40vh;
 }
 
 
@@ -102,9 +101,6 @@ display: none;
 }
 
 .slides {
-    // width: 100%;
-    // height: 100%;
-    // background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,8 +108,7 @@ display: none;
 }
 
 .slides > img {
-    // width: 100%;
-    // height: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,7 +149,6 @@ display: none;
         align-items: center;
         justify-content: center;
         padding: 5vw;
-        margin-top: -100vw;
         text-align: center;
     }
     .left-hero > div{
@@ -173,4 +167,11 @@ display: none;
         height: 4vw;
         padding: 2vw;
     }
+    .slide-container{
+        width: 90%;
+    }
+    .hero-section > img{
+        margin: 0;
+    }
+
 }

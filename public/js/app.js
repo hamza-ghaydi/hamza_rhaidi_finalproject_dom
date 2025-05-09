@@ -10,7 +10,7 @@ burger.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     navigation.style.display = "none"
-    document.body.style.background = "none"
+    document.body.style.background = ""
 })
 
 
@@ -167,7 +167,72 @@ next.addEventListener("click", (e) => {
 })
 
 
+// events carousel
 
+
+
+
+// testemonials
+
+const container = document.querySelector('.cards');
+  const cardItems = container.querySelectorAll('.card-item');
+  const visibleCards = 3;
+  const totalCards = cardItems.length;
+  const maxIndex = totalCards - visibleCards;
+  const dotsContainer = document.querySelector('.dots-container');
+
+  let currentIndex = 0;
+  let cardWidth = null;
+
+  // Create dots
+  for (let i = 0; i <= maxIndex; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => {
+      scrollToCard(i);
+      currentIndex = i;
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  const dots = document.querySelectorAll('.dot');
+
+  function scrollToCard(index) {
+    if (!cardWidth) {
+      const card = container.querySelector('.card-item');
+      cardWidth = card.offsetWidth + 10; 
+    }
+    container.scrollTo({
+      left: cardWidth * index,
+      behavior: 'smooth'
+    });
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+  }
+
+  function autoScrollCards() {
+    currentIndex = (currentIndex + 1) > maxIndex ? 0 : currentIndex + 1;
+    scrollToCard(currentIndex);
+  }
+
+  setInterval(autoScrollCards, 1500);
+
+
+
+  // fix the header in top
+  window.addEventListener('scroll',  ()=> {
+    const infoContact = document.querySelector('.info-contact');
+    const head = document.querySelector('.head');
+    
+    if (window.scrollY > infoContact.offsetHeight) {
+        head.classList.add('fixed-head');
+    } 
+    else {
+        head.classList.remove('fixed-head');
+    }
+});
 
 
 

@@ -17,6 +17,7 @@
     transition: 0.5s;
 }
 
+
 .info-contact{
     display: flex;
     align-items: center;
@@ -46,8 +47,19 @@
     padding: 3vh 4vw;
     background-color: $bg-color;
     justify-content: space-between;
-    z-index: 999;
 }
+
+.fixed-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3vh 4vw;
+    z-index: 1000;
+    background-color: #000000;
+    border-bottom: 0.1px $accent solid;
+}
+
 .head > a{
     text-decoration: none;
     font-size: 30px;
